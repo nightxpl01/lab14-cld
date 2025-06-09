@@ -86,7 +86,7 @@ Dodanie phpmyadmin jako dodatkowej usługi w pliku override, dopisanie portu ngi
     
       phpmyadmin:
         image: phpmyadmin/phpmyadmin:5.2
-        container_name: lemp-phpmyadmin
+        container_name: phpmyadmin
         ports:
           - "6001:80"
         environment:
