@@ -105,6 +105,7 @@ Dodanie phpmyadmin jako dodatkowej usługi w pliku override, dopisanie portu ngi
 ## Przykładowy plik .env
 
 MYSQL_DATABASE=tescik_mm
+
 MYSQL_USER=tescik_mm
 
 
