@@ -75,7 +75,7 @@ Należy zmodyfikować rozwiązanie zadania NIEOBOWIĄZKOWEGO z lab. 13 w następ
 
 ## Finalny plik docker-compose.override
 
-Dodanie phpmyadmin jako dodatkowej usługi w pliku override, dopisuje port nginx i kontener phpmyadmin
+Dodanie phpmyadmin jako dodatkowej usługi w pliku override, dopisanie portu nginx
 
     version: '3.8'
     
