@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  nginx:
+    ports:
+      - "4001:80"
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:5.2
+    container_name: lemp-phpmyadmin
+    ports:
+      - "6001:80"
+    environment:
+      PMA_HOST: mysql
+      PMA_USER: ${MYSQL_USER}
+      PMA_PASSWORD_FILE: /run/secrets/mysql_user_password
+    secrets:
+      - mysql_user_password
+    depends_on:
+      - mysql
+    networks:
+      - frontend
+      - backend
